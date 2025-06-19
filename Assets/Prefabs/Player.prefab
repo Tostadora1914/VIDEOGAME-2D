@@ -9,11 +9,16 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3468485813769887070}
+  - component: {fileID: 7672367097830583484}
   - component: {fileID: 8714005343331125734}
   - component: {fileID: 3843240359729251322}
+  - component: {fileID: 2537183371319160539}
+  - component: {fileID: 6527614465344392044}
+  - component: {fileID: 5581856529288592471}
+  - component: {fileID: 4806684438968514716}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35,6 +40,19 @@ Transform:
   - {fileID: 8063206798126994721}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7672367097830583484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775207493525916888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9491b50f991df1a4c87e8f0a0fc86c41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _jetpack: {fileID: 2537183371319160539}
 --- !u!212 &8714005343331125734
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -108,6 +126,99 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2537183371319160539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775207493525916888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ef66c91cfda523479cc90af550b06b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxEnergy: 100
+  _energyFlyingRatio: 0.2
+  _energyRegenerationRatio: 0.2
+  _horizontalForce: 20
+  _flyForce: 300
+  _energy: 10
+--- !u!114 &6527614465344392044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775207493525916888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc888c73856b58344a14dc7acb83d7f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _jetpack: {fileID: 2537183371319160539}
+--- !u!70 &5581856529288592471
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775207493525916888}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.011335477, y: 0.6623619}
+  m_Size: {x: 1.0009019, y: 1.4089776}
+  m_Direction: 0
+--- !u!50 &4806684438968514716
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775207493525916888}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 20
+  m_LinearDrag: 0.2
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &7824762514301721701
 GameObject:
   m_ObjectHideFlags: 0
@@ -124,7 +235,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8063206798126994721
 Transform:
   m_ObjectHideFlags: 0
@@ -208,7 +319,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3362842855453766188
 Transform:
   m_ObjectHideFlags: 0
