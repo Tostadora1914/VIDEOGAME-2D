@@ -8,10 +8,10 @@ public class Player : MonoBehaviour
 {
     #region Properties
 
+    private Animator _anim;
     #endregion
     #region Fields
-    [SerializeField] private Jetpack _jetpack;
-    private Animator _anim;
+    [SerializeField] private VitalSupport _vS;
     #endregion
     #region Unity Callbacks
     private void Awake()
@@ -25,9 +25,16 @@ public class Player : MonoBehaviour
     }
 
     // Update is called once per frame
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "NoSe")
+        {
+            _anim.SetTrigger("Damage");
+        }
+    }
     void Update()
     {
-        _anim.SetBool("Flying", _jetpack.Flying);
+        _anim.SetBool("Flying", _vS.Flying);
     }
     #endregion
     #region Public Methods

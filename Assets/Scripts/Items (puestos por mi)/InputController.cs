@@ -5,13 +5,13 @@ using UnityEngine;
 public class ImputController : MonoBehaviour
 {
     #region Fields
-    [SerializeField] private Jetpack _jetpack;
+    [SerializeField] private VitalSupport _vS;
     #endregion
     #region Unity Callbacks
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -19,15 +19,27 @@ public class ImputController : MonoBehaviour
     {
         // Horizontal fly
         if (Input.GetAxis("Horizontal") < 0)
-            _jetpack.FlyHorizontal(Jetpack.Direction.Left);
+        {
+            _vS.FlyHorizontal(VitalSupport.Direction.Left);
+        }
         if (Input.GetAxis("Horizontal") > 0)
-            _jetpack.FlyHorizontal(Jetpack.Direction.Right);
+        {
+            _vS.FlyHorizontal(VitalSupport.Direction.Right);
+        }
         // Vertical fly
         if (Input.GetAxis("Vertical") > 0)
-            _jetpack.FlyUp();
+        {
+            _vS.FlyUp();
+        }
         else
-            _jetpack.StopFlying();
+        {
+            _vS.StopFlying();
+        }
+
 
     }
-    #endregion
+            #endregion
 }
+   
+    
+

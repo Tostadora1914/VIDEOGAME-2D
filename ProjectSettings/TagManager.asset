@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Platform
   - Ground
+  - NoSe
   layers:
   - Default
   - TransparentFX

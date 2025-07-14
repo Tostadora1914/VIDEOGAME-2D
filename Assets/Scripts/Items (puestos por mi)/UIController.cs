@@ -7,8 +7,8 @@ using TMPro;
 public class UIController : MonoBehaviour
 {
     #region Fields
-    [SerializeField] private Jetpack _jetpack;
-    [SerializeField] private Slider _energySlider;
+    [SerializeField] private VitalSupport _vS;
+    [SerializeField] private Slider _oxygenSlider;
     [SerializeField] private TextMeshProUGUI _textSlider;
     #endregion
     #region Unity Callbacks
@@ -21,8 +21,8 @@ public class UIController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        _energySlider.value = _jetpack.Energy;
-        _textSlider.text = ((int) _jetpack.transform.position.y).ToString();
+        _oxygenSlider.value = _vS.Oxygen;
+        _textSlider.text = ((int) _vS.transform.position.y).ToString();
     }
     #endregion
 }

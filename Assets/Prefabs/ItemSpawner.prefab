@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac90e580ebbc4bc47872424b4f8b1e3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _minSpawnTime: 0.5
+  _minSpawnTime: 1
   _maxSpawnTime: 7
   _spawnlist:
   - {fileID: 5891854138540348169, guid: 7f9fc58a26f3839428521797e3945cf7, type: 3}

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Item : MonoBehaviour, IRecolectable
 {
-    [SerializeField] private Jetpack jetpack;
+    [SerializeField] private VitalSupport vitalSupport;
     
     #region Fields
     [SerializeField] private GameObject _particles;
@@ -13,9 +13,9 @@ public class Item : MonoBehaviour, IRecolectable
     public enum ItemTypes
     {
         None,
-        NoSe,
-        ErrorCode,
-        PositiveWords
+        MONOXIDODECARBONO,
+        Escombros,
+        Oxygen
     }
     #endregion
     #region Properties
@@ -27,8 +27,8 @@ public class Item : MonoBehaviour, IRecolectable
     public void Recolected()
     {
         Destroy(gameObject);
-        CreateParticles();
     }
+
     #endregion
     #region Private Methods
     public void CreateParticles()
