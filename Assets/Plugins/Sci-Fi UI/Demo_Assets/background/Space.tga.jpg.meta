@@ -1,12 +1,16 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Plugins/Sci-Fi UI/Demo_Assets/background/Space.tga.jpg.meta
 guid: de2e2384020e62a4ab0ec63959be4fbf
+========
+guid: 5db3e80c1582d3b4795cb27e248b4df7
+>>>>>>>> 300455e (JUEGO COMPLETO + MAIN MENU):Assets/Sprites/Settings-icon-symbol-vector.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -35,7 +39,11 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 1
+<<<<<<<< HEAD:Assets/Plugins/Sci-Fi UI/Demo_Assets/background/Space.tga.jpg.meta
     aniso: 16
+========
+    aniso: 1
+>>>>>>>> 300455e (JUEGO COMPLETO + MAIN MENU):Assets/Sprites/Settings-icon-symbol-vector.png.meta
     mipBias: 0
     wrapU: 1
     wrapV: 1
@@ -63,9 +71,15 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
+<<<<<<<< HEAD:Assets/Plugins/Sci-Fi UI/Demo_Assets/background/Space.tga.jpg.meta
   applyGammaDecoding: 1
   swizzle: 50462976
   cookieLightType: 1
+========
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+>>>>>>>> 300455e (JUEGO COMPLETO + MAIN MENU):Assets/Sprites/Settings-icon-symbol-vector.png.meta
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -85,7 +99,11 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
+<<<<<<<< HEAD:Assets/Plugins/Sci-Fi UI/Demo_Assets/background/Space.tga.jpg.meta
     textureCompression: 0
+========
+    textureCompression: 1
+>>>>>>>> 300455e (JUEGO COMPLETO + MAIN MENU):Assets/Sprites/Settings-icon-symbol-vector.png.meta
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0

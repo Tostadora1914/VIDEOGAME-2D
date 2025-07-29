@@ -5,7 +5,7 @@ using UnityEngine;
 public class ItemEscombros : Item 
 {
     const float ESCOMBROS_FORCE = 10000;
-    const float ESCOMBROS_DOWN_POS = 2.5f;
+    const float ESCOMBROS_DOWN_POS = 4f;
     #region Unity Callbacks
     private void OnCollisionEnter2D(Collision2D collision)
     {

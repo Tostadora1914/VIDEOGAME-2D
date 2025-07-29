@@ -1320,7 +1320,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7986528292396532004, guid: 9115886b5417ea04882b529b7f59bf8a, type: 3}
       propertyPath: _flyForce
-      value: 300
+      value: 320
       objectReference: {fileID: 0}
     - target: {fileID: 7986528292396532004, guid: 9115886b5417ea04882b529b7f59bf8a, type: 3}
       propertyPath: _maxOxygen
@@ -1328,7 +1328,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7986528292396532004, guid: 9115886b5417ea04882b529b7f59bf8a, type: 3}
       propertyPath: _horizontalForce
-      value: 15
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 7986528292396532004, guid: 9115886b5417ea04882b529b7f59bf8a, type: 3}
       propertyPath: _oxygenFlyingRatio

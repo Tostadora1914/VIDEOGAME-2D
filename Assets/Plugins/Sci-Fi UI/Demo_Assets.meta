@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Plugins/Sci-Fi UI/Demo_Assets.meta
 guid: e31c4f2e5332b7d44aa10d95b1a09278
+========
+guid: 4da00e5423a2873468bb419302456e6a
+>>>>>>>> 300455e (JUEGO COMPLETO + MAIN MENU):Assets/Plugins/Sci-Fi UI.meta
 folderAsset: yes
 timeCreated: 1438091524
 licenseType: Store
