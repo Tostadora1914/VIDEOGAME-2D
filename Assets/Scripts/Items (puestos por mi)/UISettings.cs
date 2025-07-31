@@ -18,28 +18,23 @@ public class UISettings : MonoBehaviour
     [SerializeField] Toggle _softShadowToggle;
     [SerializeField] Toggle _hardShadowToggle;
     [SerializeField] Slider _particleResolutionSlider;
-<<<<<<< HEAD
-=======
     [SerializeField] GameObject _lateralPanel;
     [SerializeField] GameObject _settingsPanel;
     [SerializeField] Button _settingsButton;
->>>>>>> 300455e (JUEGO COMPLETO + MAIN MENU)
     #endregion
     #region Unity Callbacks
     // Start is called before the first frame update
     void Start()
     {
-<<<<<<< HEAD
         
         // Events
         // Button Click
         InitializeDropDownQuality();
-=======
+
         // Events
         // Button Click
         InitializeDropDownQuality();
         _settingsButton.onClick.AddListener(OpenSettingsPanel);
->>>>>>> 300455e (JUEGO COMPLETO + MAIN MENU)
         _closeButton.onClick.AddListener(CloseSettings);
         _qualityDrop.onValueChanged.AddListener(SetQuality);
         _vsyncToggle.onValueChanged.AddListener(SetVSync);
@@ -68,15 +63,11 @@ public class UISettings : MonoBehaviour
             QualitySettings.shadows = ShadowQuality.Disable;
         }
     }
-<<<<<<< HEAD
-=======
     void OpenSettingsPanel()
     {
         _lateralPanel.SetActive(false); // Cierra el lateral
         _settingsPanel.SetActive(true); // Abre Settings
     }
-
->>>>>>> 300455e (JUEGO COMPLETO + MAIN MENU)
     private void SetParticleResolution(float level)
     {
         QualitySettings.particleRaycastBudget = (int)level;
@@ -97,13 +88,10 @@ public class UISettings : MonoBehaviour
     {
         gameObject.SetActive(false);
     }
-<<<<<<< HEAD
-=======
     public void CloseLateralPanel()
     {
         _lateralPanel.SetActive(false);
     }
->>>>>>> 300455e (JUEGO COMPLETO + MAIN MENU)
     private void InitializeDropDownQuality()
     {
         List<string> options = new List<string>(QualitySettings.names);
