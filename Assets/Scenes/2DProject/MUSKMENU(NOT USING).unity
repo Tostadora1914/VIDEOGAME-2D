@@ -615,7 +615,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: de2e2384020e62a4ab0ec63959be4fbf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b76b8b216adf64f4bbdb78f7977f0310, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -742,7 +742,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1.071106, y: 2.156601}
+  m_AnchoredPosition: {x: -1.0710754, y: 2.156601}
   m_SizeDelta: {x: -352.3551, y: -171.2955}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &171184848
@@ -1313,6 +1313,9 @@ MonoBehaviour:
   _softShadowToggle: {fileID: 490534592}
   _hardShadowToggle: {fileID: 1165733382}
   _particleResolutionSlider: {fileID: 1822587878}
+  _lateralPanel: {fileID: 1559478252}
+  _settingsPanel: {fileID: 338379332}
+  _settingsButton: {fileID: 1546784946}
 --- !u!1 &425130782
 GameObject:
   m_ObjectHideFlags: 0
@@ -4066,7 +4069,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5db3e80c1582d3b4795cb27e248b4df7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 371bd401a26ce924caafd2a6bf6d3c9d, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
